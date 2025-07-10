@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shobhit Ashok Gajbe - Resume</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" xintegrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .section {
+            @apply mb-12 md:mb-16;
+        }
+        .section-title {
+            @apply text-2xl md:text-3xl font-bold text-gray-800 mb-6 border-b-2 border-indigo-500 pb-2;
+        }
+        .card {
+            @apply bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-300 hover:scale-105 hover:shadow-2xl;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-700">
+
+    <!-- Header & Contact Info -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="text-2xl font-bold text-gray-800">
+                <a href="#">My Resume</a>
+            </div>
+            <div class="hidden md:flex space-x-6 items-center">
+                <a href="#objective" class="text-gray-600 hover:text-indigo-600 transition-colors">Objective</a>
+                <a href="#skills" class="text-gray-600 hover:text-indigo-600 transition-colors">Skills</a>
+                <a href="#projects" class="text-gray-600 hover:text-indigo-600 transition-colors">Projects</a>
+                <a href="#education" class="text-gray-600 hover:text-indigo-600 transition-colors">Education</a>
+                <a href="#certifications" class="text-gray-600 hover:text-indigo-600 transition-colors">Certifications</a>
+                <a href="#contact" class="bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600 transition-colors">Contact</a>
+            </div>
+            <div class="md:hidden">
+                <button id="menu-btn" class="text-gray-600 focus:outline-none">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+            </div>
+        </nav>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+            <a href="#objective" class="block py-2 px-4 text-sm hover:bg-gray-100">Objective</a>
+            <a href="#skills" class="block py-2 px-4 text-sm hover:bg-gray-100">Skills</a>
+            <a href="#projects" class="block py-2 px-4 text-sm hover:bg-gray-100">Projects</a>
+            <a href="#education" class="block py-2 px-4 text-sm hover:bg-gray-100">Education</a>
+            <a href="#certifications" class="block py-2 px-4 text-sm hover:bg-gray-100">Certifications</a>
+            <a href="#contact" class="block py-2 px-4 text-sm hover:bg-gray-100">Contact</a>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-6 py-12 md:py-20">
+
+        <!-- Hero Section -->
+        <section class="flex flex-col md:flex-row items-center mb-16 md:mb-24">
+            <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                <h1 class="text-4xl md:text-6xl font-extrabold text-gray-800 mb-2">Shobhit Ashok Gajbe</h1>
+                <p class="text-xl md:text-2xl text-indigo-600 font-medium mb-4">Data Analyst</p>
+                <div id="contact" class="flex justify-center md:justify-start space-x-6 text-2xl">
+                    <a href="mailto:shobhitgajbe11@gmail.com" class="text-gray-500 hover:text-indigo-600 transition-colors" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://github.com/s1h2o3bhit" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600 transition-colors" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/shobhit-qajbe-357aa0178" target="_blank" rel="noopener noreferrer" class="text-gray-500 hover:text-indigo-600 transition-colors" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="tel:8149326011" class="text-gray-500 hover:text-indigo-600 transition-colors" aria-label="Phone"><i class="fas fa-phone"></i></a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                 <img src="https://placehold.co/400x400/E9D5FF/4C1D95?text=SAG" alt="Shobhit Ashok Gajbe" class="rounded-full shadow-2xl w-64 h-64 md:w-80 md:h-80 object-cover">
+            </div>
+        </section>
+
+        <!-- Objective Section -->
+        <section id="objective" class="section">
+            <h2 class="section-title">Objective</h2>
+            <p class="text-lg text-gray-600 leading-relaxed">
+                Motivated and analytically-minded, skilled in Python, SQL, and Excel. Passionate about transforming data into insights to drive decision-making. Eager to contribute to real-world projects through a data analyst internship or entry-level opportunity.
+            </p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-indigo-600"><i class="fas fa-code mr-2"></i>Programming</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Python (Pandas, NumPy)</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-indigo-600"><i class="fas fa-chart-bar mr-2"></i>Data Visualization</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Power BI</li>
+                        <li>Matplotlib</li>
+                        <li>Seaborn</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-indigo-600"><i class="fas fa-tools mr-2"></i>Tools</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Excel</li>
+                        <li>Jupyter Notebook</li>
+                        <li>Google Sheets</li>
+                        <li>Git</li>
+                    </ul>
+                </div>
+                 <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-indigo-600"><i class="fas fa-magnifying-glass-chart mr-2"></i>Analytics</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Exploratory Data Analysis (EDA)</li>
+                        <li>Data Cleaning</li>
+                        <li>Hypothesis Testing</li>
+                        <li>Basic Machine Learning</li>
+                    </ul>
+                </div>
+                 <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-indigo-600"><i class="fas fa-handshake-angle mr-2"></i>Soft Skills</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Communication</li>
+                        <li>Teamwork</li>
+                        <li>Presentation</li>
+                        <li>Problem Solving</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section">
+            <h2 class="section-title">Projects</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">E-commerce Sales Dashboard (BlinkIT)</h3>
+                        <p class="text-gray-600 mb-4">Built a dynamic dashboard in Power BI showing sales trends, leading to a 15% increase in targeted marketing and a 10% reduction in unsold inventory.</p>
+                        <a href="https://github.com/s1h2o3bhit/blinkit-analysis/tree/main" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600 transition-colors">View Project <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Bank Dashboard</h3>
+                        <p class="text-gray-600 mb-4">Built a dynamic dashboard in Power BI showing trends by region/product; identified seasonal patterns to support business decisions.</p>
+                        <a href="https://github.com/s1h2o3bhit/bank-bi-dashboard/tree/main" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600 transition-colors">View Project <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Website Data Analysis</h3>
+                        <p class="text-gray-600 mb-4">Analyzed raw website data using Python (Pandas, Scikit-learn) to find insights through cleaning, preprocessing, and statistical methods.</p>
+                        <a href="https://github.com/s1h2o3bhit/website-data" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600 transition-colors">View Project <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Netflix Movie Data Analysis</h3>
+                        <p class="text-gray-600 mb-4">Performed analysis on Netflix data by cleaning, processing, and analyzing raw data to solve website-related problems.</p>
+                        <a href="https://github.com/s1h2o3bhit/my-analyst-project" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600 transition-colors">View Project <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Store Data Analysis</h3>
+                        <p class="text-gray-600 mb-4">Created an annual report for Vrinda store using Excel to understand customer behavior and drive sales growth.</p>
+                        <a href="https://github.com/s1h2o3bhit/excel-store-analysis" target="_blank" rel="noopener noreferrer" class="inline-block bg-indigo-500 text-white px-4 py-2 rounded-full hover:bg-indigo-600 transition-colors">View Project <i class="fab fa-github ml-2"></i></a>
+                    </div>
+                </div>
+                 <!-- Project 6 -->
+                <div class="card">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Gym Management System</h3>
+                        <p class="text-gray-600 mb-4">Led a team of 6 to develop a gym database management system using Python, HTML, CSS, and SQL. Responsible for frontend development and team leadership.</p>
+                        <span class="inline-block bg-gray-300 text-gray-600 px-4 py-2 rounded-full">Local Network Project</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="section">
+            <h2 class="section-title">Education</h2>
+            <div class="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-300 before:to-transparent">
+                <!-- Item -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-indigo-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                       <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-xl border border-slate-200 shadow">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Master of Computer Management</div>
+                            <time class="font-caveat font-medium text-indigo-500">2022-2023</time>
+                        </div>
+                        <div class="text-slate-500">Taywade College, RTMNU University, Nagpur</div>
+                        <div class="text-slate-500 text-sm">8.42 CGPA (A+ Grade)</div>
+                    </div>
+                </div>
+                 <!-- Item -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-white bg-slate-300 group-[.is-active]:bg-indigo-500 text-slate-500 group-[.is-active]:text-emerald-50 shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                       <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] bg-white p-4 rounded-xl border border-slate-200 shadow">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-bold text-slate-900">Bachelor of Computer Application</div>
+                            <time class="font-caveat font-medium text-indigo-500">2020-2021</time>
+                        </div>
+                        <div class="text-slate-500">Taywade College, RTMNU University, Nagpur</div>
+                        <div class="text-slate-500 text-sm">8.00 CGPA (Division 1)</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section">
+            <h2 class="section-title">Certifications</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                <a href="https://excel.jatanshah.in/your-certificate/2D11F5156BE6-2D143D26C0DC-2D06454A10BC/" target="_blank" rel="noopener noreferrer" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow">
+                    <p class="font-semibold text-gray-800">Basic to Advance Ms-Excel</p>
+                    <p class="text-sm text-gray-500">Skill Nation Academy</p>
+                </a>
+                <a href="https://excel.jatanshah.in/your-certificate/2D143D356679-2D143D273287-2D06454A10BC/" target="_blank" rel="noopener noreferrer" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow">
+                    <p class="font-semibold text-gray-800">Basic to Advance Power Bi</p>
+                    <p class="text-sm text-gray-500">Skill Nation Academy</p>
+                </a>
+                <a href="https://excel.jatanshah.in/your-certificate/2D143D270E93-2D143D270E91-2D06454A10BC/" target="_blank" rel="noopener noreferrer" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow">
+                    <p class="font-semibold text-gray-800">Basic to Advance SQL</p>
+                    <p class="text-sm text-gray-500">Skill Nation Academy</p>
+                </a>
+                <a href="https://learn.deeplearning.ai/accomplishments/f59cd377-0d33-4984-8dbf-f07bc24a2e58?usp=sharing" target="_blank" rel="noopener noreferrer" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow">
+                    <p class="font-semibold text-gray-800">Certificate of ChatGPT for Developer</p>
+                    <p class="text-sm text-gray-500">Deeplearning.AI</p>
+                </a>
+                 <a href="https://www.cloudskillsboost.google/public_profiles/1169123c-531a-4299-a1b7-a6428383e336/badges" target="_blank" rel="noopener noreferrer" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow">
+                    <p class="font-semibold text-gray-800">Generative AI Fundamentals</p>
+                    <p class="text-sm text-gray-500">Google Cloud Skills Boost</p>
+                </a>
+                <a href="https://www.mygreatlearning.com/certificate/YQDYFQZV" target="_blank" rel="noopener noreferrer" class="block p-4 bg-white rounded-lg shadow hover:shadow-md transition-shadow">
+                    <p class="font-semibold text-gray-800">Prompt Engineering for ChatGpt</p>
+                    <p class="text-sm text-gray-500">Great Learning Academy</p>
+                </a>
+                <div class="p-4 bg-white rounded-lg shadow">
+                    <p class="font-semibold text-gray-800">Data Science and Analytics</p>
+                    <p class="text-sm text-gray-500">HP Life Foundation</p>
+                </div>
+                 <div class="p-4 bg-white rounded-lg shadow">
+                    <p class="font-semibold text-gray-800">AI for Beginners</p>
+                    <p class="text-sm text-gray-500">HP Life Foundation</p>
+                </div>
+                 <div class="p-4 bg-white rounded-lg shadow">
+                    <p class="font-semibold text-gray-800">Certification of Training (Python)</p>
+                    <p class="text-sm text-gray-500">Code Insight Academy</p>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Extras -->
+        <section id="extras" class="section">
+            <h2 class="section-title">Extras</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-indigo-600"><i class="fas fa-language mr-2"></i>Languages</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>English</li>
+                        <li>Hindi</li>
+                        <li>Marathi</li>
+                    </ul>
+                </div>
+                <div class="card p-6">
+                    <h3 class="text-xl font-bold mb-3 text-indigo-600"><i class="fas fa-heart mr-2"></i>Interests</h3>
+                    <ul class="list-disc list-inside text-gray-600">
+                        <li>Sports Analytics</li>
+                        <li>Data Storytelling</li>
+                        <li>Urban Data Systems</li>
+                        <li>Reading & Cricket</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6">
+        <div class="container mx-auto px-6 text-center">
+            <p>&copy; <span id="year"></span> Shobhit Ashok Gajbe. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scroll to top button -->
+    <button id="to-top-button" class="hidden fixed bottom-5 right-5 bg-indigo-500 text-white p-3 rounded-full shadow-lg hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 transition-opacity duration-300" aria-label="Scroll to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile menu toggle
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Set current year in footer
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        // Scroll to top button
+        const toTopButton = document.getElementById('to-top-button');
+        window.onscroll = function() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                toTopButton.classList.remove('hidden');
+            } else {
+                toTopButton.classList.add('hidden');
+            }
+        };
+        toTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Close mobile menu when a link is clicked
+        const mobileNavLinks = document.querySelectorAll('#mobile-menu a');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+    </script>
+</body>
+</html>
